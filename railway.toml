@@ -1,0 +1,11 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm run build"
+
+[deploy]
+# Next.js binds to $PORT automatically, which Railway injects at runtime.
+startCommand = "npm run start"
+healthcheckPath = "/"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
