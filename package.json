@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A tiny web app that shows a random Bible verse on the click of a button.",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
